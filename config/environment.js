@@ -17,6 +17,10 @@ module.exports = function(environment) {
       }
     },
 
+    googleFonts: [
+      'Roboto:300',
+    ],
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
