@@ -1,0 +1,13 @@
+.table {
+  width: 100%;
+  color: $c-white;
+
+  th {
+    background: $c-black;
+    text-align: left;
+  }
+
+  td {
+    color: $c-black;
+  }
+}
