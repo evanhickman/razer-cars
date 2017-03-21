@@ -1,15 +1,25 @@
 
-$c-primary-0: #B6473E;
-$c-primary-1: #FFC7C2;
-$c-primary-2: #DD7E77;
-$c-primary-3: #801A12;
-$c-primary-4: #560600;
-$c-white: #ffefed;
-$c-black: #0f0d0d;
+$c-1: rgba(115, 251, 211, 1);
+$c-2: rgba(68, 229, 231, 1);
+$c-3: rgba(89, 210, 254, 1);
+$c-4: rgba(74, 143, 231, 1);
+$c-5: rgba(92, 122, 255, 1);
+$c-6: rgba(241, 96, 96, 1);
+$c-white: #f9f9f9;
+$c-grey: #e2e2e2;
+$c-black: #2b2929;
+
+$f-primary: 'Lato', sans-serif;
 
 $m-gutter: 1rem;
+
+$b-card-boder: 0.05rem $c-grey solid;
 
 $s-shadow-1: 4px 6px 20px -2px $c-black;
 $s-shadow-2: 2px 4px 10px -1px $c-black;
 
 @import 'reset';
+@import 'layout';
+@import 'top-nav';
+@import 'card';
+@import 'buttons';

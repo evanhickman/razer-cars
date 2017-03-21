@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: $b-card-boder;
+
+  & > * + * {
+    border-top: $b-card-boder;
+  }
+}
+
+.card-block {
+  padding: $m-gutter;
+
+  &__bg {
+    background: $c-grey;
+  }
+
+  &__text {
+    color: $c-black;
+  }
+
+  & > * + * {
+    margin-top: $m-gutter;
+  }
+}

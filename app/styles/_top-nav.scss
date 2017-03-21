@@ -1,0 +1,16 @@
+.top-nav {
+  background: $c-3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+
+    & > * + * {
+      margin-left: $m-gutter;
+    }
+}
