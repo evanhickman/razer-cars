@@ -1,7 +1,25 @@
 .button {
   display: inline-block;
   padding: $m-gutter;
+  border: 0;
   border-radius: 0.2rem;
+  font-size: $m-gutter;
+}
+
+.is-link {
   background: $c-6;
   color: $c-white;
+}
+
+.is-submit {
+  background: $c-3;
+  color: $c-white;
+}
+
+.action-buttons {
+  display: flex;
+
+  & > * + * {
+    margin-left: $m-gutter;
+  }
 }

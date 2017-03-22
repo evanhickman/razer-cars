@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    margin: 0;
+    padding: $m-gutter / 4;
+    border: 0;
+    background: $c-grey;
+    outline: none;
+  }
+
+  & > * + * {
+    margin-top: $m-gutter / 2;
+  }
+}

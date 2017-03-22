@@ -2,7 +2,6 @@
   <div class="container">
     <div class="navbar">
       <div class="navbar__group">
-          {{!-- TODO make a working link --}}
         <h1 class="logo">{{#link-to "index"}}Razer Cars{{/link-to}}</h1>
       </div>
       <div class="navbar__group">
@@ -10,8 +9,9 @@
         <li class="nav-list__item">
           {{#link-to "makes"}}All Makes{{/link-to}}
         </li>
-          {{!-- TODO make a working link --}}
-        <li class="nav-list__item">Add Make</li>
+        <li class="nav-list__item">
+          {{#link-to "makes-new"}}Add Make{{/link-to}}
+        </li>
         </ul>
       </div>
     </div>

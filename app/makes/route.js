@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-const apiUrl = 'https://razerapi.herokuapp.com/ryan/basic/brands'
+const apiUrl = 'https://razerapi.herokuapp.com/evanh/basic/brands';
 
 export default Ember.Route.extend({
   model () {
