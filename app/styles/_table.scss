@@ -3,11 +3,16 @@
   color: $c-white;
 
   th {
+    padding: $m-gutter / 4;
     background: $c-black;
     text-align: left;
   }
 
   td {
     color: $c-black;
+  }
+
+  a {
+    color: $c-6;
   }
 }

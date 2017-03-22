@@ -12,12 +12,14 @@
             <th>Available Models</th>
             <th></th>
           </tr>
+          {{#each model as |make|}}
           <tr>
-            <td>Mazda</td>
-            <td>JPN</td>
+            <td>{{make.name}}</td>
+            <td>{{make.country}}</td>
             <td>0</td>
-            <td>See More</td>
+            <td><a href="#">See More</a></td>
           </tr>
+          {{/each}}
         </table>
       </div>
     </div>
