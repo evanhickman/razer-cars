@@ -7,9 +7,9 @@
 
     <div class="card-block">
         <form class="form" {{action "save" on="submit"}}>
-          {{input type="text" placeholder="Make" class="form__input" value=formValues.name}}
-          {{input type="text" placeholder="Country" class="form__input" value=formValues.country}}
-          {{input type="text" placeholder="Cars" class="form__input" value=formValues.cars}}
+          <div class="input-block">{{input type="text" placeholder="Make" class="form__input" value=formValues.name}}</div>
+          <div class="input-block">{{input type="text" placeholder="Country" class="form__input" value=formValues.country}}</div>
+          <div class="input-block">{{input type="text" placeholder="Cars" class="form__input" value=formValues.cars}}</div>
           <div class="action-buttons">
             <button class="button is-link">{{#link-to "make.index"}}Back{{/link-to}}</button>
             <button type="submit" class="button is-submit">{{#link-to "make.index"}}Submit{{/link-to}}</button>

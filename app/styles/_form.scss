@@ -3,14 +3,24 @@
   flex-direction: column;
 
   &__input {
+    flex-grow: 1;
     margin: 0;
     padding: $m-gutter / 4;
     border: 0;
-    background: $c-grey;
+    border: 0.05rem $c-grey solid;
     outline: none;
+
+    &-addon {
+      padding: ($m-gutter / 4) ($m-gutter);
+      background: darken($c-grey, 20%);
+    }
   }
 
   & > * + * {
     margin-top: $m-gutter / 2;
   }
+}
+
+.input-block {
+  display: flex;
 }
