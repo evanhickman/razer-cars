@@ -1,5 +1,5 @@
 import Ember from 'ember';
-
+import config from 'razer-cars/config/environment';
 const apiUrl = 'https://razerapi.herokuapp.com/evanh/basic/brands';
 
 export default Ember.Controller.extend({
