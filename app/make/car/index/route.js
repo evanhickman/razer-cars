@@ -5,7 +5,7 @@ export default Ember.Route.extend({
   model() {
     const id = this.paramsFor('make.car').id;
 
-    return fetch(`${config.apiUrl}/makes/${id}`)
+    return fetch(`${config.apiUrl}/brands/${id}`)
       .then(r => r.json());
   }
 });

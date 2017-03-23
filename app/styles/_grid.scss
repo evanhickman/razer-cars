@@ -1,0 +1,9 @@
+.grid {
+  display: flex;
+  padding-top: $m-gutter;
+  margin: -$m-gutter;
+
+  &__item {
+    margin: $m-gutter;
+  }
+}
