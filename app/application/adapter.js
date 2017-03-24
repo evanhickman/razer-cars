@@ -1,5 +1,5 @@
 import DS from 'ember-data';
-import config from 'punchstarter/config/environment';
+import config from 'razer-cars/config/environment';
 
 export default DS.JSONAPIAdapter.extend({
   host: config.DS.host,
