@@ -4,7 +4,6 @@ export default Ember.Controller.extend({
   formValues: {
     name: '',
     country: '',
-    cars: '',
   },
 
   actions: {
