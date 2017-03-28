@@ -1,0 +1,27 @@
+.table {
+  width: 100%;
+  color: $c-white;
+  border-collapse: collapse;
+
+  th {
+    padding: $m-gutter / 4;
+    background: $c-black;
+    text-align: left;
+  }
+
+  tr {
+
+    &:nth-child(even) {
+      background: $c-grey;
+    }
+  }
+
+  td {
+    padding: $m-gutter / 2;
+    color: $c-black;
+  }
+
+  a {
+    color: $c-6;
+  }
+}

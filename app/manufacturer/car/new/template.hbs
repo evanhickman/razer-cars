@@ -1,0 +1,27 @@
+<div class="section">
+  <div class="container">
+    <div class="card">
+      <div class="card-block card-block__bg">
+        <h2 class="card-block__text">Add a New Car for {{model.name}}</h2>
+      </div>
+
+    <div class="card-block">
+        <form class="form" {{action "saveNewCar" on="submit"}}>
+          <div class="input-block">{{input type="text" placeholder="Model" class="form__input" value=formValues.model}}</div>
+          <div class="input-block">{{input type="text" placeholder="Year" class="form__input" value=formValues.year}}</div>
+          <div class="input-block">{{input type="text" placeholder="Horsepower" class="form__input" value=formValues.hp}}</div>
+          <div class="input-block">
+            <span class="form__input-addon">{{fa-icon "usd"}}</span>{{input type="text" placeholder="Price" class="form__input" value=formValues.price}}
+          </div>
+          <div class="action-buttons">
+            {{#link-to "manufacturer.index" class="button is-link"}}Back{{/link-to}}
+            <button type="submit" class="button is-submit">Submit</button>
+          </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+{{outlet}}

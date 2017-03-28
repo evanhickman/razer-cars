@@ -2,6 +2,11 @@
 
 module.exports = function(environment) {
   var ENV = {
+    apiUrl: 'https://razerapi.herokuapp.com/evanh/basic',
+    DS: {
+      host: 'https://razerapi.herokuapp.com',
+      namespace: 'evanh',
+    },
     modulePrefix: 'razer-cars',
     environment: environment,
     rootURL: '/',
@@ -16,6 +21,10 @@ module.exports = function(environment) {
         Date: false
       }
     },
+
+    googleFonts: [
+      'Roboto:300',
+    ],
 
     APP: {
       // Here you can pass flags/options to your application instance

@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: $b-card-boder;
+
+  & > * + * {
+    border-top: $b-card-boder;
+  }
+}
+
+.card-block {
+  padding: $m-gutter;
+
+  &__bg {
+    background: $c-grey;
+  }
+
+  &__text {
+    color: $c-black;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+    padding: $m-gutter;
+  }
+
+  & > * + * {
+    margin-top: $m-gutter;
+  }
+}
