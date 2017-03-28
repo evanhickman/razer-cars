@@ -2,7 +2,7 @@
   <div class="container">
     <div class="card">
       <div class="card-block card-block__bg">
-        <h2 class="card-block__text">Makes</h2>
+        <h2 class="card-block__text">Manufacturers</h2>
       </div>
       <div class="card-block">
         <table class="table">
@@ -12,12 +12,12 @@
             <th>Available Models</th>
             <th></th>
           </tr>
-          {{#each model as |make|}}
+          {{#each model as |manufacturer|}}
           <tr>
-            <td>{{make.name}}</td>
-            <td>{{make.country}}</td>
+            <td>{{manufacturer.name}}</td>
+            <td>{{manufacturer.country}}</td>
             <td>0</td>
-            <td>{{#link-to "make.car" make.id}}See More{{/link-to}}</td>
+            <td>{{#link-to "manufacturer.car" manufacturer.id}}See More{{/link-to}}</td>
           </tr>
           {{/each}}
         </table>

@@ -1,0 +1,30 @@
+<div class="section">
+  <div class="container">
+    <div class="card">
+      <div class="card-block card-block__bg">
+        <h2 class="card-block__text">{{model.name}}</h2>
+      </div>
+      <div class="card-block__flex">
+        <p class="button is-link">{{#link-to "manufacturer.edit" model}}Edit{{/link-to}}</p>
+        <p class="button is-link">{{#link-to "manufacturer.car.new"}}Add New Model{{/link-to}}</p>
+      </div>
+    </div>
+    <div class="grid">
+      {{#each model.car as |car|}}
+      <div class="grid__item">
+        <div class="card">
+          <div class="card-block card-block__bg">
+            <h2 class="card-block__text">{{car.name}}</h2>
+          </div>
+          <div class="card-block">
+            <p class="card-block__text">{{car.hp}}</p>
+            <p class="card-block__text">${{car.price}}</p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+{{outlet}}

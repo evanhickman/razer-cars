@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:make/car/index', 'Unit | Route | make/car/index', {
+moduleFor('route:manufacturer/car/index', 'Unit | Route | manufacturer/car/index', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });
